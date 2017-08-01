@@ -46,7 +46,7 @@ foreach ($sub in $subs) {
 		$role.Actions.Clear()
 		$role.Actions.Add("Microsoft.Compute/*/read")
 		$role.Actions.Add("Microsoft.Storage/storageAccounts/listKeys/action")
-		$role.Actions.Add("Microsoft.Insights/diagnosticSettings/*/read")
+		$role.Actions.Add("Microsoft.Insights/*/read")
 		$role.Actions.Add("Microsoft.Commerce/RateCard/read")
 		$role.Actions.Add("Microsoft.Commerce/UsageAggregates/read")
 		$role.AssignableScopes.Clear()
