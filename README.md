@@ -4,7 +4,7 @@ Powershell (and other languages) snippets for Azure
 
    This script will create Azure Storage Table REST API SAS tokens that can then be used to fetch raw Azure utilization metrics. 
    
-## create-cldy-app-with-rbac.ps1
+## create-cldy-app-with-read-only-rbac.ps1
    The script performs the following actions
    1. Create an AD Service Principal
    2. For every subscription:
