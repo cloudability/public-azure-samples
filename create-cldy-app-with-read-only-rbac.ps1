@@ -27,6 +27,9 @@ $app = Get-AzureRmADApplication -ApplicationId $sp.ApplicationId.Guid
 $appId = $app.ApplicationId
 $appObjectId = $app.ObjectId.Guid
 
+<#
+For more information on Reader role, see: https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-built-in-roles#reader
+#>
 $roleName = "Reader"
 foreach ($sub in $subs) {
 	$subId = $sub.SubscriptionId
