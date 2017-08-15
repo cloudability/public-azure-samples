@@ -6,7 +6,7 @@ Powershell (and other languages) snippets for Azure
    1. Create an AD Service Principal
    2. For every subscription:
       - Assign the built-in "Reader" role to the service principal created in Step 1, with a subscription scope
-   3. Output the application id and secret for the service principal. Please send generated application id and secret to Cloudability in a secure manner.
+   3. Output the tenant id. application id and secret for the service principal. Please send the output from this script to Cloudability in a secure manner.
 
 ## create-storage-table-sas-tokens.ps1
 
