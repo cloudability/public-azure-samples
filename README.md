@@ -1,14 +1,11 @@
 # public-azure-samples
 Powershell (and other languages) snippets for Azure
 
-## create-cldy-app-with-read-only-rbac.ps1
-   The script performs the following actions
-   1. Create an AD Service Principal
-   2. For every subscription:
-      - Assign the built-in "Reader" role to the service principal created in Step 1, with a subscription scope
-   3. Output the tenant id, application id and secret for the service principal. Please send the output from this script to Cloudability in a secure manner.
-
-## create-storage-table-sas-tokens.ps1
-
-   This script will create Azure Storage Table REST API SAS tokens that can then be used to fetch raw Azure utilization metrics. 
+## list-owners-for-subscriptions.ps1
    
+Writes the list of users for a provided list of Azure subscriptions.  Since setting up credentials with Cloudability requires access to the subscriptions, this script can determine which users have the permissions to succesfully complete setup.
+
+## users-role-for-subscriptions.ps1
+
+Writes the authorization roles that the current user has access to on a list of Azure subscriptions.
+
