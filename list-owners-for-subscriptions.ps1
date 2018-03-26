@@ -1,5 +1,5 @@
 <#
-A script to identify all owners for each provided subscription.
+This script identifies all of the owners of the provided subscriptions.
 
 The $selectedSubIds array defined in line 20 MUST be populated with String IDs before this script is run.  For example:
 $selectedSubIds = ("5fccde18-ddac-4c33-9025-95b40cde3335","84ed165f-9cae-43bd-bf0e-ebec2b6f2781")
