@@ -22,7 +22,7 @@ Write-Output "Selected subscriptions to query: $selectedSubIds"
 
 foreach ($subscription in $selectedSubIds) {
 
-    Write-Output "`r`n"
+    Write-Output "====START Subscription: $subscription ===== `r`n"
     Try {
         Set-AzureRmContext -SubscriptionId $subscription -ErrorAction Stop
     } Catch {
@@ -32,6 +32,7 @@ foreach ($subscription in $selectedSubIds) {
 
     Write-Output "`r`nOwners for subscription $subscription"
     Get-AzureRmRoleAssignment -Scope /subscriptions/$subscription -RoleDefinitionName Owner
+    Write-Output "====END Subscription: $subscription ===== `r`n"
 }
 
 Stop-Transcript
